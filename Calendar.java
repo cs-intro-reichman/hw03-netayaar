@@ -35,17 +35,11 @@ public class Calendar {
                 else {
                 System.out.println(dayOfMonth + "/" + month + "/" + year);
             }
-	 		//// If you want to stop the loop after n days, replace the condition of the
-	 		//// if statement with the condition (debugDaysCounter == n)
+	
 			}
 		}
     }
 		
-	 	//// Write the necessary ending code here
-	
-	 // Advances the date (day, month, year) and the day-of-the-week.
-	 // If the month changes, sets the number of days in this month.
-	 // Side effects: changes the static variables dayOfMonth, month, year, dayOfWeek, nDaysInMonth.
 	 private static void advance() {
 		if (dayOfWeek == 7) {
 			dayOfWeek = 1;
