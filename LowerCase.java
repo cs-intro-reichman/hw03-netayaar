@@ -11,7 +11,23 @@ public class LowerCase {
     * Non-letter characters are left as is.
     */
     public static String lowerCase(String s) {
-        // Replace the following statement with your code
-        return null;
+        String newStr = "";
+        char ch ;
+        for (int i = 0; i < s.length(); i++) {
+        // check is char at index i is a letter
+            if (Character.isLetter(s.charAt(i))) {
+        // checks if char at index i is uppercase
+                if ((s.charAt(i) >= 'A') && (s.charAt(i)<= 'Z')) {
+                    ch = Character.toLowerCase(s.charAt(i));
+                } else {
+                    ch = s.charAt(i);
+                }
+            } else {
+                ch = s.charAt(i);
+            }
+
+            newStr += ch;
+        }
+        return newStr;
     }
 }
