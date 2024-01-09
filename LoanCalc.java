@@ -63,7 +63,7 @@ public class LoanCalc {
     public static double bisectionSolver(double loan, double rate, int n, double epsilon) {  
 		double low = loan/n;
 		double high = loan;
-		double g = ((L + H)/2);
+		double g = ((low + high)/2);
 		iterationCounter = 0;
 
 		
